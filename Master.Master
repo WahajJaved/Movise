@@ -1,0 +1,119 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.Master.cs" Inherits="DBProject.Master" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title  -->
+    <title>Movie Studio | Home</title>
+
+    <!-- Favicon  -->
+    <link rel="icon" href="img/core-img/favicon.ico">
+
+    <!-- Core Style CSS -->
+    <link rel="stylesheet" href="css/core-style.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Responsive CSS -->
+    <link href="css/responsive.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="showbox">
+            <div class="loader">
+                <svg class="circular" viewBox="25 25 50 50">
+                    <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/>
+                </svg>
+            </div>
+        </div>
+        <div class="questions-area text-center">
+            <p>Did you know?</p>
+            <ul>
+                <li>Johnny Depp is short for John Christopher Depp.</li>
+                <li>Tommy Lee Jones and Al Gore were freshman roommates at Harvard.</li>
+                <li>Brad Pitt is banned from entering China because of his role in Seven Years in Tibet.</li>
+                <li>Sean Connery wore a Toupee in every James Bond movie he was in.</li>
+                <li>Sean Bean has died in over 25 films and TV shows.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Gradient Background Overlay -->
+    <div class="gradient-background-overlay"></div>
+
+    <!-- Header Area Start -->
+     <header class="header-area bg-img" style=" background-image: url(img/bg-img/14.jpg);">
+        <div class="container-fluid h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12 h-100">
+                    <div class="main-menu h-100">
+                        <nav class="navbar h-100 navbar-expand-lg">
+                            <!-- Logo Area  -->
+                            <a class="navbar-brand" href="Home.aspx"><img src="img/core-img/logo.png" alt="Logo"></a>
+
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#studioMenu" aria-controls="studioMenu" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i> Menu</button>
+
+                            <div class="collapse navbar-collapse" id="studioMenu">
+                                <!-- Menu Area Start  -->
+                                <ul class="navbar-nav ml-auto">
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="Home.aspx">Home <span class="sr-only">(current)</span></a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="Home.aspx">Home</a>
+                                            <a class="dropdown-item" href="About.aspx">About</a>
+                                            <a class="dropdown-item" href="Login.aspx">Login</a>
+                                            
+                                        </div>
+                                    </li>
+                                  <%--  <li class="nav-item">
+                                        <a class="nav-link" href="About.aspx">About</a>
+                                    </li>--%>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="Login.aspx">Login</a>
+                                    </li>
+									<li>
+										<a class="nav-link" href="Signup.aspx">Sign Up</a>
+									</li>
+                                </ul>
+								<asp:ContentPlaceHolder ID="searchPlaceHolder" runat="server"></asp:ContentPlaceHolder>
+                               
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header Area End -->
+
+        <asp:ContentPlaceHolder ID="mainPlaceHolder" runat="server">
+        This is my master Page
+        </asp:ContentPlaceHolder>
+    
+
+   <!-- jQuery (Necessary for All JavaScript Plugins) -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Plugins js -->
+    <script src="js/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+
+</body>
+
+</html>
